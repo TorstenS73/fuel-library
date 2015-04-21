@@ -36,3 +36,8 @@ plugin.rabbitmq.heartbeat_interval = 30
 factsource = yaml
 plugin.yaml = /etc/mcollective/facts.yaml
 
+# trace what we send
+rpcaudit = 1
+rpcauditprovider = logfile
+plugin.rpcaudit.logfile = /var/log/mcollective-audit.log
+
